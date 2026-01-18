@@ -7,7 +7,7 @@
 ![Status](https://img.shields.io/badge/Status-Stable%20Release-green?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
-**VULCAN-X VAULT-KEEPER** is a high-security cryptographic framework engineered for absolute data privacy. Developed by **Karndeep Baror**, this suite implements military-grade AES-256 encryption with a unique **Hardware-Binding** logic, ensuring that sensitive data remains inaccessible even if stolen, unless accessed from the original authorized machine.
+**VULCAN-X VAULT-KEEPER** is a high-security cryptographic framework engineered for absolute data privacy. Developed by **Karndeep Baror**, this suite implements military-grade AES-256 encryption with a unique **Hardware-Binding** logic, ensuring that sensitive data remains inaccessible even if stolen, unless accessed from the original authorised machine.
 
 
 ## 🚀 Key Technical Features
@@ -36,13 +36,16 @@ The encryption flow follows a strict security pipeline:
 - Pip (Python Package Index)
 
 ### **Step 1: Clone the Repository**
+
 ```
 git clone [https://github.com/karndeepbaror/VulnCanX.git
 cd VulnCanX
 pip3 install -rf requirements.txt
 python vulncanx.py
+```
 
 ## 🖥️ User Interface Preview
+
 ```
     VULCAN-X: VAULT-KEEPER | CORE ARCHITECT: Karndeep Baror
     ------------------------------------------------------
@@ -59,7 +62,36 @@ python vulncanx.py
 `Machine Dependency`: If you plan to move data to another PC, decrypt it first.
 Audit Logs: Regularly monitor .vault_audit.bin for unauthorized access attempts.
 
+---
+
+## ⚡ ARCHITECT & LEAD DEVELOPER
+
+<div align="center">
+
+| 👤 **Developer** | **Karndeep Baror** |
+| :--- | :--- |
+| 🛡️ **Role** | Cyber Security Researcher & Ethical Hacker |
+| 💻 **Stack** | Python | Cryptography | Network Intelligence |
+| 🚀 **Project** | VULCAN-X Intelligence Suite |
+| 🌐 **Status** | Active Security Researcher |
+
+
+## 🔗 CONNECT WITH ME
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/karndeepbaror)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/karndeepbaror)
+[![Community](https://img.shields.io/badge/Community-FF5722?style=for-the-badge&logo=react&logoColor=white)](https://whatsapp.com/channel/0029Vb6plDSBKfi3qGz2fq0f)
+
+**"In the world of zero-days, I build zero-trust."**
+
+</div>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/render?type=soft&color=red&height=100&section=footer&text=DESIGNED%20BY%20BAROR&fontSize=25" />
+</p>
+
 ## 🤝 Contribution & Licensing
 
 This project is part of the `VULCAN-X` Intelligence Suite. For custom integrations or security audits, contact the developer.
+    
     
