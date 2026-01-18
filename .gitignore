@@ -1,0 +1,13 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Secret / Local files
+*.log
+*.bin
+*.vcore
+.sys_vault_audit.log
+
+# Environments
+venv/
+env/
