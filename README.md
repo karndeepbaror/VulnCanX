@@ -38,9 +38,9 @@ The encryption flow follows a strict security pipeline:
 ### **Step 1: Clone the Repository**
 
 ```
-git clone [https://github.com/karndeepbaror/VulnCanX.git
+git clone https://github.com/karndeepbaror/VulnCanX
 cd VulnCanX
-pip3 install -rf requirements.txt
+pip3 install -r requirements.txt
 python vulncanx.py
 ```
 
