@@ -1,68 +1,127 @@
-## 🛡️ VULCAN-X: VAULT-KEEPER (GHOST-PROTOCOL)
+# 🔍 TraceIntel
 
-### **Advanced Industrial-Grade Cryptographic Data Shield**
+**TraceIntel** is a powerful, asynchronous OSINT tool designed to collect, correlate, and visualize intelligence related to IP addresses. Built for security researchers, penetration testers, SOC analysts, and OSINT enthusiasts, TraceIntel aggregates data from multiple trusted sources to deliver accurate, actionable insights — fast.
 
-![Python](https://img.shields.io/badge/Python-3.9+-blue?style=for-the-badge&logo=python)
-![Encryption](https://img.shields.io/badge/Encryption-AES--256--CBC-red?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Stable%20Release-green?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
-
-**VULCAN-X VAULT-KEEPER** is a high-security cryptographic framework engineered for absolute data privacy. Developed by **Karndeep Baror**, this suite implements military-grade AES-256 encryption with a unique **Hardware-Binding** logic, ensuring that sensitive data remains inaccessible even if stolen, unless accessed from the original authorised machine.
+> ⚡ Minimal footprint. Maximum intelligence.
 
 
-## 🚀 Key Technical Features
+## 🚀 Overview
 
-- **Standard-Grade AES-256**: Implements Fernet (AES-128/256) symmetric encryption for high-speed, uncrackable data sealing.
-- **Hardware-Machine Binding (SYS-ID)**: Generates a unique SHA-256 hardware fingerprint. Data encrypted on one machine **cannot** be decrypted on another, providing a physical layer of security.
-- **Anti-Forensic Data Shredding**: Before deleting original files, the tool overwrites the disk sectors with random binary noise to prevent recovery via forensic tools.
-- **HMAC Integrity Shield**: Every encrypted "blob" is signed with an HMAC-SHA256 signature to detect and block bit-level tampering.
-- **Brute-Force Lockdown**: Intelligent delay mechanism that triggers a 60-second system lockout after 3 failed attempts.
+TraceIntel performs deep reconnaissance on a given IP address by querying multiple APIs and services in parallel. It then correlates the results to improve accuracy and confidence. The tool is designed with privacy in mind and **never uses your user agent** for external requests.
+
+Whether you're investigating suspicious traffic, validating threat intelligence, or doing OSINT research, TraceIntel gives you a clean, professional CLI experience with reliable results.
 
 
-## 🏗️ Technical Architecture
+## ✨ Key Features
+
+* ⚡ **Fully Asynchronous Engine** – ultra-fast execution using async requests
+* 🔄 **Multi‑Source Correlation** – better accuracy by comparing results
+* 🧠 **Smart IP Validation** – detects invalid or malformed IPs
+* 📡 **Network Intelligence**
+
+  * Ping check
+  * Open port detection (80, 443, 8080 — extensible)
+* 🔐 **VPN Detection** – identifies ProtonVPN-associated IPs
+* 🕵️ **Paste Exposure Check** – detects presence in Pastebin
+* 🌍 **Geolocation Intelligence**
+
+  * Continent, country, region, city
+  * Latitude & longitude
+  * Nearest probable locations (confidence-based)
+* 🏢 **Infrastructure Details**
+
+  * ISP
+  * Organization
+  * ASN (Autonomous System Number)
+  * Hostname
+* 🗺️ **Map Generation** – visual IP location mapping
+* 🧩 **Modular Architecture** – easy to extend and customize
+* 🖥️ **Clean CLI Menu System** – professional and intuitive
 
 
-The encryption flow follows a strict security pipeline:
-1. **Key Derivation**: Password + Hardware ID + Salt → PBKDF2 (300,000 Iterations).
-2. **Encryption**: Raw Data → AES-256 Ciphertext.
-3. **Authentication**: Ciphertext → HMAC Signature.
-4. **Final Packaging**: Signature + Ciphertext → `.vcore` file.
+## 🧰 Data Sources & Modules
+
+| Module              | Service      |
+| ------------------- | ------------ |
+| ProtonVPN Detection | proton.me    |
+| Paste Exposure      | pastebin.com |
+| IP Geolocation      | ip-api.com   |
+| Advanced IP Intel   | ipinfo.io    |
+| WHOIS Intelligence  | ipwhois.io   |
+
+Each source is queried independently and results are compared to enhance precision.
 
 
-## 🛠️ Installation & Setup
+## 🛠️ Requirements
 
-### **Prerequisites**
-- Python 3.9 or higher
-- Pip (Python Package Index)
+* **Python 3.8+**
+* Internet connection
 
-### **Step 1: Clone the Repository**
 
+## 📦 Installation
+
+### 🪟 Windows
+
+```bash
+git clone https://github.com/karndeepbaror/traceintel.git
+cd traceintel
+cd TraceIntel
+install.bat
 ```
-git clone https://github.com/karndeepbaror/VulnCanX
-cd VulnCanX
+
+### 🐧 Linux / macOS
+
+```bash
+git clone https://github.com/karndeepbaror/traceintel.git
+cd traceintel
+cd TraceIntel
 pip3 install -r requirements.txt
-python vulncanx.py
 ```
 
-## 🖥️ User Interface Preview
 
+## 📚 Usage
+
+```bash
+python traxosint.py <ip-address>
 ```
-    VULCAN-X: VAULT-KEEPER | CORE ARCHITECT: Karndeep Baror
-    ------------------------------------------------------
-    [1] SEAL DATA (Deep Cryptography)
-    [2] UNSEAL VAULT (Hardware-Match)
-    [3] SECURITY STATUS
-    [0] KILL SESSION
- ```
- 
-## 🛡️ Security Best Practices
 
-`Master Key`: Do not lose your master key; there is no "Password Reset" in zero-trust architecture.
+### Example
 
-`Machine Dependency`: If you plan to move data to another PC, decrypt it first.
-Audit Logs: Regularly monitor .vault_audit.bin for unauthorized access attempts.
+```bash
+python traxosint.py 8.8.8.8
+```
 
----
+### Help Menu
+
+```bash
+python traxosint.py --help
+```
+
+
+## 🎯 Use Cases
+
+* SOC & Blue Team investigations
+* OSINT research and correlation
+* Threat intelligence enrichment
+* VPN & anonymization detection
+* Academic and learning purposes
+
+
+## 🔐 Privacy & Ethics
+
+TraceIntel is built strictly for **educational, defensive security, and lawful OSINT purposes**.
+
+* ❌ No user-agent leakage
+* ❌ No unauthorized access attempts
+* ✅ Passive intelligence gathering only
+
+Users are responsible for complying with all applicable laws and regulations.
+
+
+## 📜 License
+
+This project is licensed under the **MIT License** — free to use, modify, and distribute.
+
 
 ## ⚡ ARCHITECT & LEAD DEVELOPER
 
@@ -71,8 +130,8 @@ Audit Logs: Regularly monitor .vault_audit.bin for unauthorized access attempts.
 | 👤 **Developer** | **Karndeep Baror** |
 | :--- | :--- |
 | 🛡️ **Role** | Cyber Security Researcher & Ethical Hacker |
-| 💻 **Stack** | Python | Cryptography | Network Intelligence |
-| 🚀 **Project** | VULCAN-X Intelligence Suite |
+| 💻 **Stack** | Python | OSINT | Network Intelligence |
+| 🚀 **Project** | TraceIntel - IP Tracker Tool |
 | 🌐 **Status** | Active Security Researcher |
 
 
@@ -87,11 +146,16 @@ Audit Logs: Regularly monitor .vault_audit.bin for unauthorized access attempts.
 </div>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/render?type=soft&color=red&height=100&section=footer&text=DESIGNED%20BY%20BAROR&fontSize=25" />
+  <img src="https://capsule-render.vercel.app/render?type=waving&color=gradient&height=120&section=footer&text=TRACE%20INTEL%20•%20OSINT%20RESEARCH&fontSize=22&fontColor=ffffff" />
 </p>
 
-## 🤝 Contribution & Licensing
+## ⭐ Support
 
-This project is part of the `VULCAN-X` Intelligence Suite. For custom integrations or security audits, contact the developer.
-    
-    
+If you find this project useful:
+
+* ⭐ Star the repository
+* 🍴 Fork it
+* 🧠 Contribute ideas or improvements
+
+> *Trace smarter. Intel deeper.*
+> 
